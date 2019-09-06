@@ -10,7 +10,7 @@ const morgan = require('morgan');
 
 const router = require('./router.js');
 
-//TODO: create error handling
+//error handling middlware
 const errorHandler = require( './middleware/error.js');
 const notFound = require( './middleware/404.js' );
 
