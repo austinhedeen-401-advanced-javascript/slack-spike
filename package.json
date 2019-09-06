@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/austinhedeen-401-advanced-javascript/slack-spike#readme",
   "dependencies": {
+    "dotenv": "^8.1.0",
     "superagent": "^5.1.0"
   }
 }
