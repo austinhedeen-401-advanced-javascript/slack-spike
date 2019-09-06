@@ -1,9 +1,12 @@
 'use strict';
 
 require('dotenv').config();
+
 const superagent = require('superagent');
 
-const CONVERSATIONS_LIST_URL = `https://slack.com/api/conversations.list?token=${process.env.ACCESS_TOKEN}`;
+const TOKEN = process.env.ACCESS_TOKEN;
+
+const CONVERSATIONS_LIST_URL = `https://slack.com/api/conversations.list?token=${TOKEN}`;
 const CHAT_POST_MESSAGE_URL = `https://slack.com/api/chat.postMessage`;
 
 const TARGET_CHANNEL = 'bot-testing';
@@ -42,7 +45,7 @@ const postMessageToChannel = (channelId, message) => {
   return superagent.post(CHAT_POST_MESSAGE_URL)
     .send({ "channel": channelId, "text": message })
     .set('Content-type', 'application/json')
-    .set('Authorization', `Bearer ${process.env.ACCESS_TOKEN}`);
+    .set('Authorization', `Bearer ${TOKEN}`);
 };
 
 getChannelId(TARGET_CHANNEL)
