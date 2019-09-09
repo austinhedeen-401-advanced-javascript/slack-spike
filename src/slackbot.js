@@ -7,10 +7,6 @@ const TOKEN = process.env.ACCESS_TOKEN;
 const CONVERSATIONS_LIST_URL = `https://slack.com/api/conversations.list?token=${TOKEN}`;
 const CHAT_POST_MESSAGE_URL = `https://slack.com/api/chat.postMessage`;
 
-const TARGET_CHANNEL = 'bot-testing';
-
-const MESSAGE = process.argv[2] || 'Get excited, people, test command message!';
-
 /**
  * Returns the ID of the given channel.
  *

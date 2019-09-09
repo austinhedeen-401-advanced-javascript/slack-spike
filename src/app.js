@@ -19,11 +19,6 @@ app.use(router);
 const errorHandler = require( './middleware/error.js');
 const notFound = require( './middleware/404.js' );
 
-app.get('/slack/testcommand', (request, response) => {
-  console.log('Something happened');
-  response.send('Something was sent');
-});
-
 //catch all/error handling
 app.use(notFound);
 app.use(errorHandler);
