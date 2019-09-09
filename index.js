@@ -2,6 +2,10 @@
 
 require('dotenv').config();
 
+const app = require('./src/app.js');
+
 const slackbot = require('./src/slackbot.js');
 
-slackbot('bot-testing', 'testing bot-testing message!');
+app.start(3000);
+
+// slackbot('bot-testing', 'testing bot-testing message!');
