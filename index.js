@@ -6,7 +6,7 @@ const app = require('./src/app.js');
 
 const slackbot = require('./src/slackbot.js');
 
-app.start(3000);
+app.start(process.env.PORT || 3000);
 
 // slackbot('bot-testing', 'testing bot-testing message!');
 
