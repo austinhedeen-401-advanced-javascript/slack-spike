@@ -4,7 +4,7 @@
   "description": "A spike to test a proof-of-concept for posting messages via Slack bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
