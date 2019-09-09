@@ -8,7 +8,7 @@ const cors = require('cors');
 
 const morgan = require('morgan');
 
-const router = require('./router.js');
+const router = require('./routes/commands.js');
 
 //error handling middlware
 const errorHandler = require( './middleware/error.js');
